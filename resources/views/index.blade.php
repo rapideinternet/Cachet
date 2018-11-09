@@ -11,6 +11,12 @@
 
 @include('partials.about-app')
 
+@if(!$scheduled_maintenance->isEmpty())
+<div class="section-scheduled">
+    @include('partials.schedule')
+</div>
+@endif
+
 @if(!$component_groups->isEmpty() || !$ungrouped_components->isEmpty())
 <div class="section-components">
     @include('partials.components')
@@ -20,12 +26,6 @@
 @if($display_metrics && $app_graphs)
 <div class="section-metrics">
     @include('partials.metrics')
-</div>
-@endif
-
-@if(!$scheduled_maintenance->isEmpty())
-<div class="section-scheduled">
-    @include('partials.schedule')
 </div>
 @endif
 

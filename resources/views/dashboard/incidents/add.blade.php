@@ -54,6 +54,7 @@
                                 <i class="ion ion-checkmark"></i>
                                 {{ trans('cachet.incidents.status')[4] }}
                             </label>
+
                         </div>
                         <div class="form-group">
                             <label for="incident-name">{{ trans('forms.incidents.visibility') }}</label>

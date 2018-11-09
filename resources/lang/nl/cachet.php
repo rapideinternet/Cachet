@@ -18,6 +18,7 @@ return [
             2 => 'Prestatieproblemen',
             3 => 'Gedeeltelijke Storing',
             4 => 'Grote Storing',
+	    5 => 'Onderhoud',
         ],
         'group' => [
             'other' => 'Andere componenten',
